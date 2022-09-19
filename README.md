@@ -1,20 +1,15 @@
-# Course Project - Citi Bike Trip Histories
-
-## Overview
-This project was executed as a part of the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) 
-course held by [DataTalks.Club](https://datatalks.club/). The goal of this project is to apply everything we learned
-in this course and build an end-to-end data pipeline.
+# Project - Citi Bike Trip Histories
 
 ## Problem description
-The project is related to Citi Bike trips. Where do Citi Bikers ride? When do they ride? How far do they go? 
-Which stations are most popular? What days of the week are most rides taken on? The provided data will help you discover 
-the answers to these questions and more.
+The project is associated with Citi Bike trips.
+Where can one find Citi Bikers? What time do they ride? Where do they stop?
+What are the most well-liked stations? What days of the week are rides most frequently taken? You may learn the answers to these and other questions using the offered data.
 
-The key goals of the project are:
-* develop a data pipeline that will help to organize data processing in a batch manner (on a monthly basis);
-* build analytical dashboard that will make it easy to discern the trends and digest the insights.
+The project's main objectives are to: 
+* develop a data pipeline that will aid in organizing data processing in a batch way (on a monthly basis).
+* design an analytical dashboard that will make it simple to identify patterns and glean insights; 
 
-The period of the data processing will cover from 2018 to 2020.
+The time frame for data processing is from 2018 to 2020.
 
 ## Dataset
 The initial data of Citi Bike Trip Histories could be found [here](https://s3.amazonaws.com/tripdata/index.html) in a compressed format.
@@ -159,7 +154,7 @@ Note that:
 ### 6. Google Data Studio
 When the production models are ready, you can start building a dashboard.
 
-The [dashboard](https://datastudio.google.com/s/u5AyaHHljbo) is built using Google Data Studio. The process of the such dashboard creating in Google Data Studio is described in detail in [this video](https://www.youtube.com/watch?v=39nLTs74A3E&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=43).
+The dashboard is built using Google Data Studio. The process of the such dashboard creating in Google Data Studio is described in detail in [this video](https://www.youtube.com/watch?v=39nLTs74A3E&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=43).
 
 And the final dashboard includes the following diagrams:
 * Total trips count
