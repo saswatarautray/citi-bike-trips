@@ -165,3 +165,30 @@ And the final dashboard includes the following diagrams:
 > Note: To build a Google map you need to create a new geo field `start_location` based on `start_station_latitude` and `start_station_longitude` parameters.
 
 ![Citibike-trips](https://user-images.githubusercontent.com/55026550/161604025-3cacf391-ea00-485d-b42c-623ef363f7aa.png)
+
+
+
+## Forecasting Citi Bike Demand
+
+Time series forecasting on the daily demand of Citi Bike with a 365-day horizon for every bike station in NYC
+
+**Overview:**
+- Forecasted Citi Bike daily demand with a 365-day horizon for each bike station in NYC using an additive regression model (Facebook Prophet) and a convolutional neural network (WaveNet)
+- Preprocessed ~80 million ride data hosted on AWS S3 using Dask on GCP and trained the neural net on a GPU through Google Colab
+- Prophet and WaveNet evaluated at an average MAE of 31.7 and 38.2 on the test set, respectively
+- Developed and deployed an interactive Flask web app with forecasts and map navigation
+
+**Files:**
+
+- **citibike_preprocessing.py**: data preprocessing
+- **citibike_eda.ipynb**: exploratory analysis
+- **citibike_modeling_fbprophet.ipynb**: Facebook Prophet training and evaluation
+- **citibike_modeling_wavenet.ipynb**: WaveNet training and evaluation
+- **citibike_modeling_wavenet_exog.ipynb**: WaveNet (with exogenous features) training and evaluation
+- **data**: pickled files
+- **app**: web app
+- **citibike_forecast_slides.pdf**: pdf of project presentation slides
+
+The web app includes an interactive time series graph with a map feature that allows the user to explore the forecasted daily demand for each Citi Bike station.
+
+
